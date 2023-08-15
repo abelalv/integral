@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>clases - Teoremas fundamentales del cáluculo</title>
+<title>clases - Segundo Teorema fundamentales del cáluculo</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,25 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
-}
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
 }
 </style>
 
@@ -89,7 +70,7 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Teoremas fundamentales del cáluculo</h1>
+      <h1 class="quarto-secondary-nav-title">Segundo Teorema fundamentales del cáluculo</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -142,12 +123,12 @@ div.csl-indent {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Integral definida</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">Integral definida</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./integral_definida.html" class="sidebar-item-text sidebar-link">Integral definida</a>
@@ -155,7 +136,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./teoremas.html" class="sidebar-item-text sidebar-link active">Teoremas fundamentales del cáluculo</a>
+  <a href="./teoremas.html" class="sidebar-item-text sidebar-link">Teoremas fundamentales del cáluculo</a>
   </div>
 </li>
       </ul>
@@ -169,29 +150,8 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#teorema-fundamental-del-cálculo" id="toc-teorema-fundamental-del-cálculo" class="nav-link active" data-scroll-target="#teorema-fundamental-del-cálculo">Teorema fundamental del cálculo</a></li>
-  <li><a href="#ejemplo" id="toc-ejemplo" class="nav-link" data-scroll-target="#ejemplo">Ejemplo</a></li>
-  <li><a href="#teorema-del-valor-medio-para-integrales" id="toc-teorema-del-valor-medio-para-integrales" class="nav-link" data-scroll-target="#teorema-del-valor-medio-para-integrales">Teorema del valor medio para integrales</a>
-  <ul class="collapse">
-  <li><a href="#ejercicio" id="toc-ejercicio" class="nav-link" data-scroll-target="#ejercicio">Ejercicio</a>
-  <ul class="collapse">
-  <li><a href="#solución" id="toc-solución" class="nav-link" data-scroll-target="#solución">Solución:</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#definición-el-valor-medio-de-una-función-en-un-intervalo" id="toc-definición-el-valor-medio-de-una-función-en-un-intervalo" class="nav-link" data-scroll-target="#definición-el-valor-medio-de-una-función-en-un-intervalo">Definición el valor medio de una función en un intervalo</a>
-  <ul class="collapse">
-  <li><a href="#ejemplos" id="toc-ejemplos" class="nav-link" data-scroll-target="#ejemplos">Ejemplos</a>
-  <ul class="collapse">
-  <li><a href="#solución-1" id="toc-solución-1" class="nav-link" data-scroll-target="#solución-1">Solución:</a></li>
-  </ul></li>
-  <li><a href="#ejercicio-1" id="toc-ejercicio-1" class="nav-link" data-scroll-target="#ejercicio-1">Ejercicio</a></li>
-  </ul></li>
-  <li><a href="#segundo-teorema-fundamental-del-cálculo" id="toc-segundo-teorema-fundamental-del-cálculo" class="nav-link" data-scroll-target="#segundo-teorema-fundamental-del-cálculo">Segundo teorema fundamental del cálculo</a></li>
-  <li><a href="#el-teorema-del-cambio-neto" id="toc-el-teorema-del-cambio-neto" class="nav-link" data-scroll-target="#el-teorema-del-cambio-neto">EL TEOREMA DEL CAMBIO NETO</a>
-  <ul class="collapse">
-  <li><a href="#ejemplo-1" id="toc-ejemplo-1" class="nav-link" data-scroll-target="#ejemplo-1">Ejemplo</a></li>
-  <li><a href="#ejemplo-2" id="toc-ejemplo-2" class="nav-link" data-scroll-target="#ejemplo-2">Ejemplo</a></li>
-  </ul></li>
+  <li><a href="#el-teorema-del-cambio-neto" id="toc-el-teorema-del-cambio-neto" class="nav-link active" data-scroll-target="#el-teorema-del-cambio-neto">EL TEOREMA DEL CAMBIO NETO</a></li>
+  <li><a href="#ejercicio" id="toc-ejercicio" class="nav-link" data-scroll-target="#ejercicio">Ejercicio</a></li>
   </ul>
 </nav>
     </div>
@@ -200,7 +160,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Teoremas fundamentales del cáluculo</h1>
+<h1 class="title d-none d-lg-block">Segundo Teorema fundamentales del cáluculo</h1>
 </div>
 
 
@@ -215,125 +175,23 @@ div.csl-indent {
 
 </header>
 
-<section id="teorema-fundamental-del-cálculo" class="level1">
-<h1>Teorema fundamental del cálculo</h1>
-<p>Si una función <span class="math inline">\(f\)</span> es continua en un intervalo cerrado <span class="math inline">\([a,b]\)</span> y <span class="math inline">\(F\)</span> es la antiderivada de <span class="math inline">\(f\)</span> en el intervalo <span class="math inline">\([a,b]\)</span>, entonces</p>
-<p><span class="math display">\[\int_{a}^{b} f(x) dx = F(b) - F(a).\]</span></p>
-</section>
-<section id="ejemplo" class="level1">
-<h1>Ejemplo</h1>
-<p>Calculemos la integral definida de la función <span class="math inline">\(f(x) = x^2\)</span> en el intervalo <span class="math inline">\([0,1]\)</span>. <span class="math display">\[\int_{0}^{1} x^2 dx = \frac{x^3}{3} \Big|_{0}^{1} = \frac{1}{3},\]</span></p>
-<p>¿esta afirmación la podemos usar para cálcular el area bajo la curva de una función positiva?</p>
-<p><strong>Ejercicios</strong></p>
-<p>Calcular las integrales si es posible de las siguientes funciones en los intervalos dados:</p>
-<ul>
-<li><span class="math inline">\(\int_{0}^{1} x^3 dx\)</span></li>
-<li><span class="math inline">\(\int_{1}^{4} 3\sqrt{x} dx\)</span></li>
-<li><span class="math inline">\(\int_{0}^{1} \frac{1}{x} dx\)</span></li>
-<li><span class="math inline">\(\int_{0.1}^{1} \frac{1}{x} dx\)</span></li>
-<li><span class="math inline">\(\int_{1}^{2} (x^2-3) dx\)</span></li>
-<li><span class="math inline">\(\int_{0}^{2} |2y-1| dy\)</span></li>
-</ul>
-</section>
-<section id="teorema-del-valor-medio-para-integrales" class="level1">
-<h1>Teorema del valor medio para integrales</h1>
-<p>Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, entonces existe un punto <span class="math inline">\(c\in[a,b]\)</span> tal que</p>
-<p><span class="math display">\[\int_a^b f(x)dx=f(c)(b-a),\]</span></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figures/valormedio.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Rect{angulo del valor medio}</figcaption><p></p>
-</figure>
-</div>
-<p><strong>¿Cómo podemos argumentar que existe un punto <span class="math inline">\(c\)</span> que cumple con la igualdad?</strong></p>
-<p>Podemos construir la siguiente función:</p>
-<p><span class="math display">\[F(x)=\int_a^x f(t)dt\]</span></p>
-<p><strong>¿Qué propiedades tiene esta función?</strong></p>
-<ul>
-<li><p><span class="math inline">\(F\)</span> es continua en <span class="math inline">\([a,b]\)</span></p></li>
-<li><p>¿Cuál es teorema de valor medio para funciones continuas?</p></li>
-<li><p>¿Cómo podemos aplicar el teorema de valor medio para funciones continuas a <span class="math inline">\(F\)</span>?</p></li>
-</ul>
-<section id="ejercicio" class="level2">
-<h2 class="anchored" data-anchor-id="ejercicio">Ejercicio</h2>
-<p>¿Es posible encuentre un valor <span class="math inline">\(c\)</span> que cumple el teorema del valor medio para la función <span class="math inline">\(f(x)=x^2\)</span> en el intervalo <span class="math inline">\([1,3]\)</span>?</p>
-<section id="solución" class="level3">
-<h3 class="anchored" data-anchor-id="solución">Solución:</h3>
-<ul>
-<li><p>Si, porque la función <span class="math inline">\(f\)</span> satisface las hipótesis del teorema del valor medio para integrales.</p></li>
-<li><p>Para encontrarlo debemos encontrar la integral</p></li>
-</ul>
-<p><span class="math display">\[\int_1^3 x^2 dx=\frac{x^3}{3}\Big|_1^3=\frac{3^3}{3}-\frac{1}{3}\]</span> luego necesitamos encontrar un <span class="math inline">\(c\)</span> tal que <span class="math display">\[\frac{3^3}{3}-\frac{1}{3}=f(c)(3-1),\]</span> <span class="math display">\[\frac{26}{3}=2c^2,\]</span> <span class="math display">\[c=\pm\sqrt{\frac{13}{3}}\approx\pm 2.081.\]</span></p>
-</section>
-</section>
-</section>
-<section id="definición-el-valor-medio-de-una-función-en-un-intervalo" class="level1">
-<h1>Definición el valor medio de una función en un intervalo</h1>
-<p>Si <span class="math inline">\(f\)</span> es integrable en <span class="math inline">\([a,b]\)</span>, el valor medio de <span class="math inline">\(f\)</span> en <span class="math inline">\([a,b]\)</span> es <span class="math display">\[\frac{1}{b-a}\int_a^b f(x)dx.\]</span></p>
-<section id="ejemplos" class="level2">
-<h2 class="anchored" data-anchor-id="ejemplos">Ejemplos</h2>
-<p>Determinar el valor medio de <span class="math inline">\(f(x)=3x^2-2x\)</span> en el intervalo <span class="math inline">\([1,4]\)</span>.</p>
-<section id="solución-1" class="level3">
-<h3 class="anchored" data-anchor-id="solución-1">Solución:</h3>
-<p>El valor medio de una función <span class="math inline">\(f(x)\)</span> en el intervalo <span class="math inline">\([a,b]\)</span> se define como: <span class="math display">\[\frac{1}{b-a}\int_a^b f(x)dx=\frac{1}{4-1}\int_1^4(3x^2-2x)dx=16.\]</span></p>
-</section>
-</section>
-<section id="ejercicio-1" class="level2">
-<h2 class="anchored" data-anchor-id="ejercicio-1">Ejercicio</h2>
-<p>A diferentes alturas en la atmósfera de la tierra el sonido viaja a diferentes velocidades. La siguiente tabla muestra la velocidad del sonido en función de la altura.</p>
-<p><span class="math display">\[\begin{array}{|c|c|c|c|c|c|c|c|c|c|c|c|}
-\hline \text { Altura (km) } &amp; 0 -11.5 &amp;  11.5 - 22 &amp; 22-32  &amp; 32-50  &amp; 50-80     \\ \hline
-\text { Velocidad (m/s) } &amp;-4x+341 &amp;295 &amp; \frac{3}{4}x+278.5 &amp;\frac{3}{2}x+254.5&amp;-\frac{3}{2}x+404 \\ \hline
-\end{array}\]</span></p>
-<p>Tomado de <span class="citation" data-cites="larson2011calculo">Larson and Edwards (<a href="#ref-larson2011calculo" role="doc-biblioref">2011</a>)</span></p>
-<ul>
-<li>Construya una función que represente la velocidad en función de la altura. Grafique la función.</li>
-<li>¿Cuál es la velocidad del sonido a <span class="math inline">\([0,80]\)</span> de altura?</li>
-</ul>
-</section>
-</section>
-<section id="segundo-teorema-fundamental-del-cálculo" class="level1">
-<h1>Segundo teorema fundamental del cálculo</h1>
-<p>Si <span class="math inline">\(ƒ\)</span> es continua en un intervalo abierto <span class="math inline">\(I\)</span> que contiene <span class="math inline">\(a\)</span>, entonces, para todo <span class="math inline">\(x\)</span> en el intervalo,</p>
-<p><span class="math display">\[\frac{d}{dx}\int_a^x ƒ(t)dt = ƒ(x)\]</span></p>
-</section>
 <section id="el-teorema-del-cambio-neto" class="level1">
 <h1>EL TEOREMA DEL CAMBIO NETO</h1>
-<p>La integral definida de la razón de cambio de una cantidad <span class="math inline">\(F'(x)\)</span> proporciona el cambio total, o cambio neto, en esa cantidad sobre el intervalo <span class="math inline">\([a, b]\)</span>.</p>
-<p><span class="math display">\[\int_a^b F'(x)dx = F(b) - F(a)\]</span></p>
-<section id="ejemplo-1" class="level2">
-<h2 class="anchored" data-anchor-id="ejemplo-1">Ejemplo</h2>
-<p>Una sustancia química fluye en un tanque de almacenamiento a una razón de <span class="math inline">\(180+3t\)</span> litros por minuto, donde 0 bt b 60. Encontrar la cantidad de la sustancia química que fluye en el tanque durante los primeros 20 minuto</p>
-<p><strong>Solución</strong> La cantidad de sustancia química en el tanque en el tiempo <span class="math inline">\(t\)</span> la definimos como c(t), entonces la razón de cambio de la cantidad de sustancia química en el tanque es <span class="math inline">\(c'(t) = 180 + 3t\)</span>. La integral definida de <span class="math inline">\(c'(t)\)</span> sobre el intervalo <span class="math inline">\([0, 20]\)</span> es la cantidad que fluye en los primeros 20 minutos</p>
-<p><span class="math display">\[\int_0^{20} (180 + 3t)dt = 180t + \frac{3}{2}t^2 \Big|_0^{20} = 3600 + 600 = 4200\]</span></p>
-<p>Otra forma de ilustrar el teorema del cambio neto es examinar la velocidad de una partícula que se mueve a lo largo de una línea recta, donde s (t) es la posición en el tiempo t. Entonces, su velocidad es <span class="math inline">\(v(t)= s'(t)\)</span> y</p>
-<p><span class="math display">\[\int_a^b v(t)dt = s(b) - s(a)\]</span> Esta integral definida representa el cambio neto en posición, o desplazamiento, de la partícula.</p>
-<p>Cuando se calcula la distancia total recorrida por la partícula, se deben considerar los intervalos donde <span class="math inline">\(v(t)\leq 0\)</span> y los intervalos donde <span class="math inline">\(v(t)\geq0\)</span>. Cuando <span class="math inline">\(v(t)\leq 0\)</span>, la partícula se mueve a la izquierda, y cuando <span class="math inline">\(v(t)\geq 0\)</span>, la partícula se mueve hacia la derecha. Para calcular la distancia total recorrida, se integra el valor absoluto de la velocidad <span class="math inline">\(|v(t)|\)</span>. Así, el desplazamiento de una partícula y la distancia total recorrida por una partícula sobre <span class="math inline">\([a, b]\)</span>, se puede escribir como</p>
-<p><span class="math display">\[\int_a^b v(t)dt = s(b) - s(a)\text{ desplazamiento por la partícula sobre  } [a, b]\]</span> <span class="math display">\[\int_a^b |v(t)|dt = \text{distancia total recorrida por la partícula sobre } [a, b]\]</span></p>
+<p>La integral definida de la razón de cambio de una cantidad <span class="math inline">\(F'(x)\)</span> proporciona el cambio total, o cambio neto, en esa cantidad sobre el intervalo <span class="math inline">\([a, b]\)</span> <span class="math display">\[\int_a^b F'(x)dx=F(b)-F(a)\]</span></p>
 </section>
-<section id="ejemplo-2" class="level2">
-<h2 class="anchored" data-anchor-id="ejemplo-2">Ejemplo</h2>
-<p>La siguiente figura muestra la gráfica de la velocidad de una partícula que se mueve a lo largo de una función ene l intervalo <span class="math inline">\([a,b]\)</span></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figures/particula.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">imagen.png</figcaption><p></p>
-</figure>
-</div>
-<p>Asi, el desplazamiento de la partícula sobre <span class="math inline">\([a,b]\)</span> es la suma de las áreas de los rectángulos sombreados, que es</p>
-<p><span class="math display">\[\int_a^b v(t)dt = A_1 - A_2 + A_3 \]</span> <span class="math display">\[\int_a^b |v(t)|dt =A_1 + A_2 + A_3 \]</span></p>
-<p>donde <span class="math inline">\(A_i\)</span> representa la area de la región <span class="math inline">\(i\)</span>, recuerde que el área siempre es positiva.</p>
-
+<section id="ejercicio" class="level1">
+<h1>Ejercicio</h1>
+<p>Una sustancia química fluye en un tanque de almacenamiento a una razón de <span class="math inline">\(180+3t\)</span> litros por minuto, donde <span class="math inline">\(0\leq t \leq 60\)</span>. Encontrar la cantidad de la sustancia química que fluye en el tanque durante los primeros 20 minutos.</p>
+<p>Otra forma de ilustrar el teorema del cambio neto es examinar la velocidad de una partícula que se mueve a lo largo de una línea recta, donde <span class="math inline">\(s(t)\)</span> es la posición en el tiempo t. Entonces, su velocidad es <span class="math inline">\(v(t)= s'(t)\)</span> y</p>
+<p><span class="math display">\[\int_a^b v(t)dt=s(b)-s(a)\]</span></p>
+<p>Esta integral definida representa el cambio neto en posición, o desplazamiento, de la partícula durante el intervalo <span class="math inline">\([a, b]\)</span>.</p>
+<p>Despalzamiento de una partícula en el intervalo <span class="math inline">\([a,b]\)</span> <span class="math display">\[\int_a^b v(t)dt=s(b)-s(a)\]</span></p>
+<p>Distancia recorrida por una partícula en el intervalo <span class="math inline">\([a,b]\)</span> <span class="math display">\[\int_a^b |v(t)|dt\]</span></p>
 
 
 </section>
-</section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
-<div id="ref-larson2011calculo" class="csl-entry" role="doc-biblioentry">
-Larson, Ron, and Bruce H Edwards. 2011. <em>C<span>á</span>lculo.</em> McGraw Hill.
-</div>
-</div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

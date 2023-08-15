@@ -16,9 +16,9 @@
   {
     "objectID": "presentacion.html",
     "href": "presentacion.html",
-    "title": "Primeros pasos con Phyton",
+    "title": "Notación de sumatoria",
     "section": "",
-    "text": "Antes de comenzar debemos instalar python en nuestro equipo\n\nVamos a la pagina oficial de anaconda y descargamos ultima vesrio de este software https://www.anaconda.com/products/individual\nInstalamos el software en nuestro equipo\nAbrimos una terminal y vamosa crear un entorno virtual para trabajar con python\n\n\nconda create -n python3 python=3.8\nAhora vamos a entrar al entornode trabajo\nconda activate python3\nNote que el nombre del entorno de trabajo aparece entre parentesis en la terminal. Ahora vamos a instalar jupyter notebook\nconda install -c conda-forge notebook\npara instalar la libreria numpy\nconda install -c anaconda numpy\nDesde la terminal podemos ejecutar jupyter notebook\njupyter notebook\nEsto nos abrira una ventana en el navegador donde podemos crear un nuevo notebook\n\n\n\njupyter"
+    "text": "Notación de sumatoria\nLa notación de sumatoria es una forma de representar sumas de muchos términos de una forma compacta.\nEjemplo:\n\\[\\sum_{i=1}^n i = 1 + 2 + 3 + \\cdots + n\\]"
   },
   {
     "objectID": "Python - Parte 1.html#entrada-y-salida",
@@ -404,5 +404,26 @@
     "title": "Aproximación de la integral definida de una función",
     "section": "Regla se simpson",
     "text": "Regla se simpson\notro método que podemos usar para aproximar una integrar es usando el método de simpson, el cual se basa en aproximar cada rectángulo por un polinomio de segundo grado, y luego sumar cada una de las áreas de los polinomios.\nComo se muestra en la siguiente figura, presentamos como se puede aproximar la curva de la función por una función cuadrática, y luego se calcula el área bajo la curva de la función cuadrática.\n\nSimpsondonde \\(m=\\frac{a+b}{2}\\), \\(h=\\frac{b-a}{2}\\) y \\(f(x)\\) es la función que se quiere integrar, de esta forma el área bajo la curva de la función cuadrática es:\n\\[\\int_a^b f(x)dx \\approx \\frac{h}{3}(f(a)+4f(m)+f(b)).\\]\nEjercicio Implemente el método de simpson para aproximar la integral de la función \\(f(x)=x^2\\) en el intervalo \\([0,1]\\), con \\(n=4\\)."
+  },
+  {
+    "objectID": "teorema2.html",
+    "href": "teorema2.html",
+    "title": "Segundo Teorema fundamentales del cáluculo",
+    "section": "",
+    "text": "EL TEOREMA DEL CAMBIO NETO\nLa integral definida de la razón de cambio de una cantidad \\(F'(x)\\) proporciona el cambio total, o cambio neto, en esa cantidad sobre el intervalo \\([a, b]\\) \\[\\int_a^b F'(x)dx=F(b)-F(a)\\]\n\n\nEjercicio\nUna sustancia química fluye en un tanque de almacenamiento a una razón de \\(180+3t\\) litros por minuto, donde \\(0\\leq t \\leq 60\\). Encontrar la cantidad de la sustancia química que fluye en el tanque durante los primeros 20 minutos.\nOtra forma de ilustrar el teorema del cambio neto es examinar la velocidad de una partícula que se mueve a lo largo de una línea recta, donde \\(s(t)\\) es la posición en el tiempo t. Entonces, su velocidad es \\(v(t)= s'(t)\\) y\n\\[\\int_a^b v(t)dt=s(b)-s(a)\\]\nEsta integral definida representa el cambio neto en posición, o desplazamiento, de la partícula durante el intervalo \\([a, b]\\).\nDespalzamiento de una partícula en el intervalo \\([a,b]\\) \\[\\int_a^b v(t)dt=s(b)-s(a)\\]\nDistancia recorrida por una partícula en el intervalo \\([a,b]\\) \\[\\int_a^b |v(t)|dt\\]"
+  },
+  {
+    "objectID": "teoremas.html#ejemplo-1",
+    "href": "teoremas.html#ejemplo-1",
+    "title": "Teoremas fundamentales del cáluculo",
+    "section": "Ejemplo",
+    "text": "Ejemplo\nUna sustancia química fluye en un tanque de almacenamiento a una razón de \\(180+3t\\) litros por minuto, donde 0 bt b 60. Encontrar la cantidad de la sustancia química que fluye en el tanque durante los primeros 20 minuto\nSolución La cantidad de sustancia química en el tanque en el tiempo \\(t\\) la definimos como c(t), entonces la razón de cambio de la cantidad de sustancia química en el tanque es \\(c'(t) = 180 + 3t\\). La integral definida de \\(c'(t)\\) sobre el intervalo \\([0, 20]\\) es la cantidad que fluye en los primeros 20 minutos\n\\[\\int_0^{20} (180 + 3t)dt = 180t + \\frac{3}{2}t^2 \\Big|_0^{20} = 3600 + 600 = 4200\\]\nOtra forma de ilustrar el teorema del cambio neto es examinar la velocidad de una partícula que se mueve a lo largo de una línea recta, donde s (t) es la posición en el tiempo t. Entonces, su velocidad es \\(v(t)= s'(t)\\) y\n\\[\\int_a^b v(t)dt = s(b) - s(a)\\] Esta integral definida representa el cambio neto en posición, o desplazamiento, de la partícula.\nCuando se calcula la distancia total recorrida por la partícula, se deben considerar los intervalos donde \\(v(t)\\leq 0\\) y los intervalos donde \\(v(t)\\geq0\\). Cuando \\(v(t)\\leq 0\\), la partícula se mueve a la izquierda, y cuando \\(v(t)\\geq 0\\), la partícula se mueve hacia la derecha. Para calcular la distancia total recorrida, se integra el valor absoluto de la velocidad \\(|v(t)|\\). Así, el desplazamiento de una partícula y la distancia total recorrida por una partícula sobre \\([a, b]\\), se puede escribir como\n\\[\\int_a^b v(t)dt = s(b) - s(a)\\text{ desplazamiento por la partícula sobre  } [a, b]\\] \\[\\int_a^b |v(t)|dt = \\text{distancia total recorrida por la partícula sobre } [a, b]\\]"
+  },
+  {
+    "objectID": "teoremas.html#ejemplo-2",
+    "href": "teoremas.html#ejemplo-2",
+    "title": "Teoremas fundamentales del cáluculo",
+    "section": "Ejemplo",
+    "text": "Ejemplo\nLa siguiente figura muestra la gráfica de la velocidad de una partícula que se mueve a lo largo de una función ene l intervalo \\([a,b]\\)\n\n\n\nimagen.png\n\n\nAsi, el desplazamiento de la partícula sobre \\([a,b]\\) es la suma de las áreas de los rectángulos sombreados, que es\n\\[\\int_a^b v(t)dt = A_1 - A_2 + A_3 \\] \\[\\int_a^b |v(t)|dt =A_1 + A_2 + A_3 \\]\ndonde \\(A_i\\) representa la area de la región \\(i\\), recuerde que el área siempre es positiva."
   }
 ]
